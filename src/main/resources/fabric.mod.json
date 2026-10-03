@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "template-mod",
+	"version": "${version}",
+	"name": "Template Mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"5hy13r!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/template-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.shyler.tutorialmod.TemplateMod"
+		],
+		"fabric-datagen": [
+			"net.shyler.tutorialmod.TemplateModDataGenerator"
+		],
+		"client": [
+			"net.shyler.tutorialmod.TemplateModClient"
+		]
+	},
+	"mixins": [
+		"template-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.5",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
